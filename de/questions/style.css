@@ -1,0 +1,13 @@
+.vh-data-wrapper {
+    width: 100%
+}
+
+.vh-data-input {
+    width: 50vw;
+}
+
+.save-btn {
+    float: right;
+    margin-right: 25vw;
+    margin-top: 10px;
+}

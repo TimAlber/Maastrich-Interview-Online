@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Maastrichter Fragebogen</title>
+</head>
+<body>
+    <h1>Maastrichter Fragebogen</h1>
+    <h3>Interview mit einer Person, die Stimmen hört</h3>
+    <br><br>
+
+    <article name="firstPage">
+        <table class="vh-data-wrapper">
+            <tr>
+              <td><label for="vh-name">Name des Stimmenhörers: </label></td>
+              <td><input type="text" id="vh-name" name="vh-name" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-adress">Adresse: </label></td>
+                <td><input type="text" id="vh-adress" name="vh-nadressame" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-phone">Telefonnummer: </label></td>
+                <td><input type="tel" id="vh-phone" name="vh-phone" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><b>Hintergrundinformationen:</b><td>
+            </tr>
+            <tr>
+                <td><label for="vh-birthday">Geburtsdatum: </label></td>
+                <td><input type="date" id="vh-birthday" name="vh-birthday" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-gender">Geschlecht: </label></td>
+                <td><input type="text" id="vh-gender" name="vh-gender" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-family-status">Familienstand: </label></td>
+                <td><input type="text" id="vh-family-status" name="vh-family-status" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-kids-number">Anzahl der Kinder: </label></td>
+                <td><input type="number" id="vh-kids-number" min=0 name="vh-kids-number" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-accommodation">Unterkunft: </label></td>
+                <td><input type="text" id="vh-accommodation" name="vh-accommodation" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-work">Arbeitsverhältnis: </label></td>
+                <td><input type="text" id="vh-work" name="vh-work" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-nationality">Nationalität/Ethnie: </label></td>
+                <td><input type="text" id="vh-nationality" name="vh-nationality" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><b>Informationen zum Interview:</b></td>
+            </tr>
+            <tr>
+                <td><label for="vh-name-interviewer">Name des Interviewers: </label></td>
+                <td><input type="text" id="vh-name-interviewer" name="vh-name-interviewer" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-date-interview">Datum des Interviews: </label></td>
+                <td><input type="date" id="vh-date-interview" name="vh-date-interview" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-date-interview-two">Datum des Nachfolgeinterviews: </label></td>
+                <td><input type="date" id="vh-date-interview-two" name="vh-date-interview-two" class="vh-data-input"></td>
+            </tr>
+            <tr>
+                <td><label for="vh-file-number">Aktenzeichen: </label></td>
+                <td><input type="text" id="vh-file-number" name="vh-file-number" class="vh-data-input"></td>
+            </tr>
+          </table>
+
+          <button onclick="saveFirstPage()" type="button" class="save-btn">Speichern</button>
+    </article>
+</body>
+</html>
