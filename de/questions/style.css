@@ -6,8 +6,43 @@
     width: 50vw;
 }
 
+.vh-data-date-input {
+    width: calc(50vw + 3px)
+}
+
 .save-btn {
     float: right;
     margin-right: 25vw;
     margin-top: 10px;
+}
+
+.article-style {
+    width: 75vw;
+    margin-left: 20px;
+}
+
+.text-area-style {
+    width: 100%;
+}
+
+.table-style {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-style td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.interactive-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.interactive-table td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
 }
