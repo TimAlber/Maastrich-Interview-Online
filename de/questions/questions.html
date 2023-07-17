@@ -216,21 +216,15 @@
                 </tr>
             </table>
             <br>
-            <div style="display: flex;">
-                <input type="text" id="int-number" name="int-number" placeholder="Nummer"
-                    style="width: 160px; margin-right: 2px;">
-                <input type="text" id="int-name" name="int-name" placeholder="Name"
-                    style="width: 110px; margin-right: 2px;">
-                <input type="text" id="int-age" name="int-age" placeholder="Alter"
-                    style="width: 105px; margin-right: 2px;">
-                <input type="text" id="int-gender" name="int-gender" placeholder="Geschlecht"
-                    style="width: 190px; margin-right: 2px;">
-                <input type="text" id="int-content" name="int-content" placeholder="Inhalte / Tonfall"
-                    style="width: 260px; margin-right: 2px;">
-                <input type="text" id="int-frequency" name="int-frequency" placeholder="Häufigkeit"
-                    style="width: 260px;">
+            <div class="inputs">
+                <input type="text" id="int-number" name="int-number" placeholder="Nummer" class="first-table-number">
+                <input type="text" id="int-name" name="int-name" placeholder="Name" class="first-table-name">
+                <input type="text" id="int-age" name="int-age" placeholder="Alter" class="first-table-age">
+                <input type="text" id="int-gender" name="int-gender" placeholder="Geschlecht" class="first-table-gender">
+                <input type="text" id="int-content" name="int-content" placeholder="Inhalte / Tonfall" class="first-table-content">
+                <input type="text" id="int-frequency" name="int-frequency" placeholder="Häufigkeit" class="first-table-frequency">
             </div>
-            <div style="display: flex; justify-content: end;">
+            <div class="button-end">
                 <button onclick="addToTable()" type="button">Hinzufügen</button>
             </div>
         </div>
@@ -272,10 +266,10 @@
                 <b>3.3</b> Wir haben eine Liste erstellt mit Umständen und Situationen, die Menschen erleben können.
                 Welche von diesen Ereignissen sind in Ihrem Leben eingetroffen? In welchem Alter haben Sie sie erlebt?
             </label><br>
-            <table style="width:100%" class="table-style">
+            <table class="table-style">
                 <tr>
                     <th>Umstände</th>
-                    <th style="width: 100px;">Ja / Nein</th>
+                    <th class="yes-no-width">Ja / Nein</th>
                     <th>Alter</th>
                     <th>Stimmen</th>
                 </tr>
@@ -292,11 +286,10 @@
                         <input type="radio" id="q-3.3.1.yesNo" name="q-3.3.1.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.1.age" min=0 name="q-3.3.1.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.1.age" min=0 name="q-3.3.1.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.1.voices" min=0 name="q-3.3.1.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.1.voices" min=0 name="q-3.3.1.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -307,11 +300,10 @@
                         <input type="radio" id="q-3.3.2.yesNo" name="q-3.3.2.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.2.age" min=0 name="q-3.3.2.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.2.age" min=0 name="q-3.3.2.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.2.voices" min=0 name="q-3.3.2.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.2.voices" min=0 name="q-3.3.2.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -322,11 +314,10 @@
                         <input type="radio" id="q-3.3.3.yesNo" name="q-3.3.3.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.3.age" min=0 name="q-3.3.3.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.3.age" min=0 name="q-3.3.3.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.3.voices" min=0 name="q-3.3.3.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.3.voices" min=0 name="q-3.3.3.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -337,11 +328,10 @@
                         <input type="radio" id="q-3.3.4.yesNo" name="q-3.3.4.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.4.age" min=0 name="q-3.3.4.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.4.age" min=0 name="q-3.3.4.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.4.voices" min=0 name="q-3.3.4.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.4.voices" min=0 name="q-3.3.4.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -352,11 +342,10 @@
                         <input type="radio" id="q-3.3.5.yesNo" name="q-3.3.5.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.5.age" min=0 name="q-3.3.5.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.5.age" min=0 name="q-3.3.5.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.5.voices" min=0 name="q-3.3.5.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.5.voices" min=0 name="q-3.3.5.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -367,11 +356,10 @@
                         <input type="radio" id="q-3.3.6.yesNo" name="q-3.3.6.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.6.age" min=0 name="q-3.3.6.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.6.age" min=0 name="q-3.3.6.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.6.voices" min=0 name="q-3.3.6.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.6.voices" min=0 name="q-3.3.6.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -382,11 +370,10 @@
                         <input type="radio" id="q-3.3.7.yesNo" name="q-3.3.7.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.7.age" min=0 name="q-3.3.7.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.7.age" min=0 name="q-3.3.7.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.7.voices" min=0 name="q-3.3.7.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.7.voices" min=0 name="q-3.3.7.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -397,11 +384,10 @@
                         <input type="radio" id="q-3.3.8.yesNo" name="q-3.3.8.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.8.age" min=0 name="q-3.3.8.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.8.age" min=0 name="q-3.3.8.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.8.voices" min=0 name="q-3.3.8.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.8.voices" min=0 name="q-3.3.8.voices" class="input-width">
                     </td>
                 </tr>
 
@@ -412,11 +398,10 @@
                         <input type="radio" id="q-3.3.9.yesNo" name="q-3.3.9.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.9.age" min=0 name="q-3.3.9.age" style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.9.age" min=0 name="q-3.3.9.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.9.voices" min=0 name="q-3.3.9.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.9.voices" min=0 name="q-3.3.9.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -432,12 +417,10 @@
                         <input type="radio" id="q-3.3.10.yesNo" name="q-3.3.10.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.10.age" min=0 name="q-3.3.10.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.10.age" min=0 name="q-3.3.10.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.10.voices" min=0 name="q-3.3.10.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.10.voices" min=0 name="q-3.3.10.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -447,12 +430,10 @@
                         <input type="radio" id="q-3.3.11.yesNo" name="q-3.3.11.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.11.age" min=0 name="q-3.3.11.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.11.age" min=0 name="q-3.3.11.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.11.voices" min=0 name="q-3.3.11.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.11.voices" min=0 name="q-3.3.11.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -462,12 +443,10 @@
                         <input type="radio" id="q-3.3.12.yesNo" name="q-3.3.12.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.12.age" min=0 name="q-3.3.12.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.12.age" min=0 name="q-3.3.12.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.12.voices" min=0 name="q-3.3.12.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.12.voices" min=0 name="q-3.3.12.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -477,12 +456,10 @@
                         <input type="radio" id="q-3.3.13.yesNo" name="q-3.3.13.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.13.age" min=0 name="q-3.3.13.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.13.age" min=0 name="q-3.3.13.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.13.voices" min=0 name="q-3.3.13.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.13.voices" min=0 name="q-3.3.13.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -492,12 +469,10 @@
                         <input type="radio" id="q-3.3.14.yesNo" name="q-3.3.14.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.14.age" min=0 name="q-3.3.14.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.14.age" min=0 name="q-3.3.14.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.14.voices" min=0 name="q-3.3.14.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.14.voices" min=0 name="q-3.3.14.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -507,12 +482,10 @@
                         <input type="radio" id="q-3.3.15.yesNo" name="q-3.3.15.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.15.age" min=0 name="q-3.3.15.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.15.age" min=0 name="q-3.3.15.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.15.voices" min=0 name="q-3.3.15.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.15.voices" min=0 name="q-3.3.15.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -522,12 +495,10 @@
                         <input type="radio" id="q-3.3.16.yesNo" name="q-3.3.16.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.16.age" min=0 name="q-3.3.16.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.16.age" min=0 name="q-3.3.16.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.16.voices" min=0 name="q-3.3.16.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.16.voices" min=0 name="q-3.3.16.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -543,12 +514,10 @@
                         <input type="radio" id="q-3.3.17.yesNo" name="q-3.3.17.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.17.age" min=0 name="q-3.3.17.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.17.age" min=0 name="q-3.3.17.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.17.voices" min=0 name="q-3.3.17.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.17.voices" min=0 name="q-3.3.17.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -558,12 +527,10 @@
                         <input type="radio" id="q-3.3.18.yesNo" name="q-3.3.18.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.18.age" min=0 name="q-3.3.18.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.18.age" min=0 name="q-3.3.18.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.18.voices" min=0 name="q-3.3.18.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.18.voices" min=0 name="q-3.3.18.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -573,12 +540,10 @@
                         <input type="radio" id="q-3.3.19.yesNo" name="q-3.3.19.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.19.age" min=0 name="q-3.3.19.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.19.age" min=0 name="q-3.3.19.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.19.voices" min=0 name="q-3.3.19.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.19.voices" min=0 name="q-3.3.19.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -588,12 +553,10 @@
                         <input type="radio" id="q-3.3.20.yesNo" name="q-3.3.20.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.20.age" min=0 name="q-3.3.20.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.20.age" min=0 name="q-3.3.20.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.20.voices" min=0 name="q-3.3.20.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.20.voices" min=0 name="q-3.3.20.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -604,12 +567,10 @@
                         <input type="radio" id="q-3.3.21.yesNo" name="q-3.3.21.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.21.age" min=0 name="q-3.3.21.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.21.age" min=0 name="q-3.3.21.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.21.voices" min=0 name="q-3.3.21.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.21.voices" min=0 name="q-3.3.21.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -620,12 +581,10 @@
                         <input type="radio" id="q-3.3.22.yesNo" name="q-3.3.22.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.22.age" min=0 name="q-3.3.22.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.22.age" min=0 name="q-3.3.22.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.22.voices" min=0 name="q-3.3.22.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.22.voices" min=0 name="q-3.3.22.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -642,12 +601,10 @@
                         <input type="radio" id="q-3.3.23.yesNo" name="q-3.3.23.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.23.age" min=0 name="q-3.3.23.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.23.age" min=0 name="q-3.3.23.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.23.voices" min=0 name="q-3.3.23.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.23.voices" min=0 name="q-3.3.23.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -657,12 +614,10 @@
                         <input type="radio" id="q-3.3.24.yesNo" name="q-3.3.24.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.24.age" min=0 name="q-3.3.24.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.24.age" min=0 name="q-3.3.24.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.24.voices" min=0 name="q-3.3.24.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.24.voices" min=0 name="q-3.3.24.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
@@ -673,53 +628,47 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" id="q-3.3.25.text" name="q-3.3.25.text" style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.25.text" name="q-3.3.25.text" class="input-width">
                     </td>
                     <td>
                         <input type="radio" id="q-3.3.24.yesNo" name="q-3.3.24.yesNo" value="yes">Ja
                         <input type="radio" id="q-3.3.24.yesNo" name="q-3.3.24.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.24.age" min=0 name="q-3.3.24.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.24.age" min=0 name="q-3.3.24.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.24.voices" min=0 name="q-3.3.24.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.24.voices" min=0 name="q-3.3.24.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" id="q-3.3.26.text" name="q-3.3.26.text" style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.26.text" name="q-3.3.26.text" class="input-width">
                     </td>
                     <td>
                         <input type="radio" id="q-3.3.26.yesNo" name="q-3.3.26.yesNo" value="yes">Ja
                         <input type="radio" id="q-3.3.26.yesNo" name="q-3.3.26.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.26.age" min=0 name="q-3.3.26.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.26.age" min=0 name="q-3.3.26.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.26.voices" min=0 name="q-3.3.26.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.26.voices" min=0 name="q-3.3.26.voices" class="input-width">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" id="q-3.3.27.text" name="q-3.3.27.text" style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.27.text" name="q-3.3.27.text" class="input-width">
                     </td>
                     <td>
                         <input type="radio" id="q-3.3.27.yesNo" name="q-3.3.27.yesNo" value="yes">Ja
                         <input type="radio" id="q-3.3.27.yesNo" name="q-3.3.27.yesNo" value="no">Nein
                     </td>
                     <td>
-                        <input type="number" id="q-3.3.27.age" min=0 name="q-3.3.27.age"
-                            style="width: calc(100% - 10px)">
+                        <input type="number" id="q-3.3.27.age" min=0 name="q-3.3.27.age" class="input-width">
                     </td>
                     <td>
-                        <input type="text" id="q-3.3.27.voices" min=0 name="q-3.3.27.voices"
-                            style="width: calc(100% - 10px)">
+                        <input type="text" id="q-3.3.27.voices" min=0 name="q-3.3.27.voices" class="input-width">
                     </td>
                 </tr>
             </table>
@@ -772,7 +721,7 @@
             <p>Haben Sie bemerkt, ob die Stimmen präsent sind, wenn Sie bestimmte Emotionen fühlen? Prüfen Sie bitte die
                 folgende Liste. Treten die Stimmen auf, wenn Sie Emotionen wie die folgenden erleben?</p>
 
-            <div style="padding: 10px; border: 1px solid black;">
+            <div class="emo-div-border">
                 <input type="checkbox" id="q-4.4.1" name="q-4.4.1" value="insecurity">
                 <label for="q-4.4.1">Unsicherheit</label><br>
 
@@ -860,7 +809,7 @@
             <label for="q-6.1">
                 <b>6.1</b> Wie erklären Sie sich die Stimmen?
             </label><br>
-            <table style="width:100%" class="table-style">
+            <table class="table-style">
                 <tr>
                     <td><b>Die Stimmen stammen von einer lebenden Person:</b></td>
                     <td></td>
@@ -1111,7 +1060,7 @@
             <label for="q-7.5">
                 <b>7.5</b> Erfahren Sie die Stimmen als:
             </label><br>
-            <table style="width:100%" class="table-style">
+            <table class="table-style">
                 <tr>
                     <td>vornehmlich positiv</td>
                     <td>
@@ -1231,10 +1180,10 @@
 
         <h4>Kognitive Strategien</h4>
 
-        <table style="width:100%" class="table-style">
+        <table class="table-style">
             <tr>
                 <th>Strategie</th>
-                <th style="width: 100px;">Ja / Nein</th>
+                <th class="yes-no-width">Ja / Nein</th>
                 <th>Wenn ja, funktioniert es?</th>
             </tr>
             <tr>
@@ -1244,7 +1193,7 @@
                     <input type="radio" id="q-9.1.yesNo" name="q-9.1.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.1.how" min=0 name="q-9.1.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.1.how" min=0 name="q-9.1.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1254,7 +1203,7 @@
                     <input type="radio" id="q-9.2.yesNo" name="q-9.2.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.2.how" min=0 name="q-9.2.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.2.how" min=0 name="q-9.2.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1264,7 +1213,7 @@
                     <input type="radio" id="q-9.3.yesNo" name="q-9.3.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.3.how" min=0 name="q-9.3.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.3.how" min=0 name="q-9.3.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1274,7 +1223,7 @@
                     <input type="radio" id="q-9.4.yesNo" name="q-9.4.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.4.how" min=0 name="q-9.4.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.4.how" min=0 name="q-9.4.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1284,7 +1233,7 @@
                     <input type="radio" id="q-9.5.yesNo" name="q-9.5.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.5.how" min=0 name="q-9.5.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.5.how" min=0 name="q-9.5.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1294,7 +1243,7 @@
                     <input type="radio" id="q-9.6.yesNo" name="q-9.6.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.6.how" min=0 name="q-9.6.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.6.how" min=0 name="q-9.6.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1304,16 +1253,16 @@
                     <input type="radio" id="q-9.7.yesNo" name="q-9.7.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.7.how" min=0 name="q-9.7.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.7.how" min=0 name="q-9.7.how" class="input-width">
                 </td>
             </tr>
         </table>
         <h4>Verhaltensstrategien</h4>
 
-        <table style="width:100%" class="table-style">
+        <table class="table-style">
             <tr>
                 <th>Strategie</th>
-                <th style="width: 100px;">Ja / Nein</th>
+                <th class="yes-no-width">Ja / Nein</th>
                 <th>Wenn ja, funktioniert es?</th>
             </tr>
             <tr>
@@ -1323,7 +1272,7 @@
                     <input type="radio" id="q-9.8.yesNo" name="q-9.8.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.8.how" min=0 name="q-9.8.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.8.how" min=0 name="q-9.8.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1333,7 +1282,7 @@
                     <input type="radio" id="q-9.9.yesNo" name="q-9.9.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.9.how" min=0 name="q-9.9.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.9.how" min=0 name="q-9.9.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1343,7 +1292,7 @@
                     <input type="radio" id="q-9.10.yesNo" name="q-9.10.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.10.how" min=0 name="q-9.10.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.10.how" min=0 name="q-9.10.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1353,7 +1302,7 @@
                     <input type="radio" id="q-9.11.yesNo" name="q-9.11.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.11.how" min=0 name="q-9.11.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.11.how" min=0 name="q-9.11.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1363,7 +1312,7 @@
                     <input type="radio" id="q-9.12.yesNo" name="q-9.12.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.12.how" min=0 name="q-9.12.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.12.how" min=0 name="q-9.12.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1373,17 +1322,17 @@
                     <input type="radio" id="q-9.13.yesNo" name="q-9.13.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.13.how" min=0 name="q-9.13.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.13.how" min=0 name="q-9.13.how" class="input-width">
                 </td>
             </tr>
         </table>
 
         <h4>Körperliche Strategien</h4>
 
-        <table style="width:100%" class="table-style">
+        <table class="table-style">
             <tr>
                 <th>Strategie</th>
-                <th style="width: 100px;">Ja / Nein</th>
+                <th class="yes-no-width">Ja / Nein</th>
                 <th>Wenn ja, funktioniert es?</th>
             </tr>
             <tr>
@@ -1393,7 +1342,7 @@
                     <input type="radio" id="q-9.14.yesNo" name="q-9.14.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.14.how" min=0 name="q-9.14.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.14.how" min=0 name="q-9.14.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1403,7 +1352,7 @@
                     <input type="radio" id="q-9.15.yesNo" name="q-9.15.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.15.how" min=0 name="q-9.15.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.15.how" min=0 name="q-9.15.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1413,7 +1362,7 @@
                     <input type="radio" id="q-9.16.yesNo" name="q-9.16.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.16.how" min=0 name="q-9.15.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.16.how" min=0 name="q-9.15.how" class="input-width">
                 </td>
             </tr>
             <tr>
@@ -1423,7 +1372,7 @@
                     <input type="radio" id="q-9.17.yesNo" name="q-9.17.yesNo" value="no">Nein
                 </td>
                 <td>
-                    <input type="number" id="q-9.17.how" min=0 name="q-9.17.how" style="width: calc(100% - 10px)">
+                    <input type="number" id="q-9.17.how" min=0 name="q-9.17.how" class="input-width">
                 </td>
             </tr>
         </table>
@@ -1567,19 +1516,14 @@
                 </tr>
             </table>
             <br>
-            <div style="display: flex;">
-                <input type="text" id="int2-year" name="int2-year" placeholder="Jahr"
-                    style="width: 60px; margin-right: 2px;">
-                <input type="text" id="int2-hospital" name="int2-hospital" placeholder="Krankenhaus / Ambulant"
-                    style="width: 230px; margin-right: 2px;">
-                <input type="text" id="int2-kind" name="int2-kind" placeholder="Art der Therapie"
-                    style="width: 160px; margin-right: 2px;">
-                <input type="text" id="int2-lenght" name="int2-lenght" placeholder="Länge"
-                    style="width: 70px; margin-right: 2px;">
-                <input type="text" id="int2-reason" name="int2-reason" placeholder="Grund der Behandlung"
-                    style="width: 100%; margin-right: 2px;">
+            <div class="inputs">
+                <input type="text" id="int2-year" name="int2-year" placeholder="Jahr" class="second-table-year">
+                <input type="text" id="int2-hospital" name="int2-hospital" placeholder="Krankenhaus / Ambulant" class="second-table-hospital">
+                <input type="text" id="int2-kind" name="int2-kind" placeholder="Art der Therapie" class="second-table-kind">
+                <input type="text" id="int2-lenght" name="int2-lenght" placeholder="Länge" class="second-table-lenght">
+                <input type="text" id="int2-reason" name="int2-reason" placeholder="Grund der Behandlung" class="second-table-reason">
             </div>
-            <div style="display: flex; justify-content: end;">
+            <div class="button-end">
                 <button onclick="addToTableTwo()" type="button">Hinzufügen</button>
             </div>
         </div>
@@ -1628,15 +1572,12 @@
             </tr>
         </table>
         <br>
-        <div style="display: flex;">
-            <input type="text" id="int3-name" name="int3-name" placeholder="Name"
-                style="width: 60px; margin-right: 2px;">
-            <input type="text" id="int3-knows" name="int3-knows" placeholder="Weiß über die Stimmen Bescheid"
-                style="width: 400px; margin-right: 2px;">
-            <input type="text" id="int3-can-talk" name="int3-can-talk"
-                placeholder="Kann mit ihm / ihr über die Stimmen reden" style="width: 500px; margin-right: 2px;">
+        <div class="inputs">
+            <input type="text" id="int3-name" name="int3-name" placeholder="Name" class="third-table-name">
+            <input type="text" id="int3-knows" name="int3-knows" placeholder="Weiß über die Stimmen Bescheid" class="third-table-knows">
+            <input type="text" id="int3-can-talk" name="int3-can-talk" placeholder="Kann mit ihm / ihr über die Stimmen reden" class="third-table-talk">
         </div>
-        <div style="display: flex; justify-content: end;">
+        <div class="button-end">
             <button onclick="addToTableThree()" type="button">Hinzufügen</button>
         </div>
 
@@ -1649,7 +1590,7 @@
                 wollen?</p>
             <textarea id="q-13" name="q-13" rows="10" cols="50" class="text-area-style"></textarea>
         </div>
-        <div style="display: flex; width: 100%; justify-content: end;">
+        <div class="save-button">
             <button onclick="saveAll()" type="button">Speichern</button>
         </div>
     </article>

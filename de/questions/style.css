@@ -46,3 +46,99 @@
     text-align: left;
     padding: 8px;
 }
+
+.first-table-number {
+    margin-right: 2px;
+}
+
+.first-table-name {
+    width: 110px;
+    margin-right: 2px;
+}
+
+.first-table-age {
+    width: 105px;
+    margin-right: 2px;
+}
+
+.first-table-gender {
+    width: 190px;
+    margin-right: 2px;
+}
+
+.first-table-content {
+    width: 260px;
+    margin-right: 2px;
+}
+
+.first-table-frequency {
+    width: 260px;
+}
+
+.input-width {
+    width: calc(100% - 10px);
+}
+
+.inputs {
+    display: flex;
+}
+
+.button-end {
+    display: flex;
+    justify-content: end;
+}
+
+.yes-no-width {
+    width: 100px;
+}
+
+.emo-div-border {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.second-table-year {
+    width: 60px;
+    margin-right: 2px;
+}
+
+.second-table-hospital {
+    width: 230px;
+    margin-right: 2px;
+}
+
+.second-table-kind {
+    width: 160px;
+    margin-right: 2px;
+}
+
+.second-table-lenght {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.second-table-reason {
+    width: 100%;
+    margin-right: 2px;
+}
+
+.third-table-name {
+    width: 60px;
+    margin-right: 2px;
+}
+
+.third-table-knows {
+    width: 400px;
+    margin-right: 2px;
+}
+
+.third-table-talk {
+    width: 500px;
+    margin-right: 2px;
+}
+
+.save-button {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
