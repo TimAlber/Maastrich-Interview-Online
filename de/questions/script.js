@@ -17,6 +17,8 @@ function saveAll() {
     }
     localStorage.setItem("maastricht-interview-data", JSON.stringify(obj));
     console.log(localStorage.getItem("maastricht-interview-data"));
+
+    window.open('../export/export.html', "_self");
 }
 
 function saveFirstPage() {
