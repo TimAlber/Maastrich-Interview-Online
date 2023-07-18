@@ -7,3 +7,16 @@
     text-align: center;
     padding: 10px
 }
+
+.my-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    margin-right: 5px;
+}
+
+.right {
+    margin-left: 5px;
+}
