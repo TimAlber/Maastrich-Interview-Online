@@ -4,6 +4,16 @@ function saveAll() {
         section_1: saveSectionOne(),
         section_2: saveSectionTwo(),
         section_3: saveSectionThree(),
+        section_4: saveSectionFour(),
+        section_5: saveSectionFive(),
+        section_6: saveSectionSix(),
+        section_7: saveSectionSeven(),
+        section_8: saveSectionEight(),
+        section_9: saveSectionNine(),
+        section_10: saveSectionTen(),
+        section_11: saveSectionEleven(),
+        section_12: saveSectionTwelve(),
+        section_13: saveSectionThirteen(),
     }
     localStorage.setItem("maastricht-interview-data", JSON.stringify(obj));
     console.log(localStorage.getItem("maastricht-interview-data"));
@@ -234,6 +244,227 @@ function saveSectionThreeTable(){
     }
 }
 
+function saveSectionFour(){
+    const q_4_1 = document.getElementById("q-4.1").value;
+    const q_4_2 = document.getElementById("q-4.2").value;
+    const q_4_3 = document.getElementById("q-4.3").value;
+    const q_4_4 = document.getElementById("q-4.4").value;
+
+    return {
+        q_4_1: q_4_1,
+        q_4_2: q_4_2,
+        q_4_3: q_4_3,
+        q_4_4: q_4_4,
+        q_4_4_boxes: {
+            q_4_4_1: document.getElementById('q-4.4.1').checked,
+            q_4_4_2: document.getElementById('q-4.4.2').checked,
+            q_4_4_3: document.getElementById('q-4.4.3').checked,
+            q_4_4_4: document.getElementById('q-4.4.4').checked,
+            q_4_4_5: document.getElementById('q-4.4.5').checked,
+            q_4_4_6: document.getElementById('q-4.4.6').checked,
+            q_4_4_7: document.getElementById('q-4.4.7').checked,
+            q_4_4_8: document.getElementById('q-4.4.8').checked,
+            q_4_4_9: document.getElementById('q-4.4.9').checked,
+            q_4_4_10: document.getElementById('q-4.4.10').checked,
+            q_4_4_11: document.getElementById('q-4.4.11').checked,
+            q_4_4_12: document.getElementById('q-4.4.12').checked,
+            q_4_4_13: document.getElementById('q-4.4.13').checked,
+        },
+        q_4_4_end: document.getElementById('q-4.4.end').value,
+    }
+}
+
+function saveSectionFive(){
+    const q_5_1 = document.getElementById("q-5.1").value;
+    const q_5_2 = document.getElementById("q-5.2").value;
+    const q_5_3 = document.getElementById("q-5.3").value;
+
+    return {
+        q_5_1: q_5_1,
+        q_5_2: q_5_2,
+        q_5_3: q_5_3
+    }
+}
+
+function saveSectionSix(){
+    return {
+        q_6_1: {
+            q_6_1_1: getValueFromRadios('q-6.1.1'),
+            q_6_1_2: getValueFromRadios('q-6.1.2'),
+            q_6_1_3: getValueFromRadios('q-6.1.3'),
+            q_6_1_4: getValueFromRadios('q-6.1.4'),
+            q_6_1_5: getValueFromRadios('q-6.1.5'),
+            q_6_1_6: getValueFromRadios('q-6.1.6'),
+            q_6_1_7: getValueFromRadios('q-6.1.7'),
+            q_6_1_8: getValueFromRadios('q-6.1.8'),
+            q_6_1_9: getValueFromRadios('q-6.1.9'),
+            q_6_1_10: getValueFromRadios('q-6.1.10'),
+            q_6_1_11: getValueFromRadios('q-6.1.11'),
+            q_6_1_12: getValueFromRadios('q-6.1.12'),
+            q_6_1_13: getValueFromRadios('q-6.1.13'),
+            q_6_1_14: getValueFromRadios('q-6.1.14'),
+            q_6_1_15: getValueFromRadios('q-6.1.15'),
+            q_6_1_16: getValueFromRadios('q-6.1.16'),
+            q_6_1_17: getValueFromRadios('q-6.1.17'),
+            q_6_1_18: document.getElementById('q-6.1.18').value,
+        },
+        q_6_2: document.getElementById('q-6.2').value,
+    }
+}
+
+function saveSectionSeven(){
+    return {
+        q_7_1: {
+            q_7_1_1: document.getElementById('q-7.1.1').value,
+            q_7_1_2: document.getElementById('q-7.1.2').value,
+            q_7_1_3: document.getElementById('q-7.1.3').value,
+            q_7_1_4: document.getElementById('q-7.1.4').value,
+            q_7_1_5: document.getElementById('q-7.1.5').value,
+            q_7_1_6: document.getElementById('q-7.1.6').value,
+            q_7_1_7: document.getElementById('q-7.1.7').value,
+            q_7_1_8: document.getElementById('q-7.1.8').value,
+            q_7_1_9: document.getElementById('q-7.1.9').value,
+            q_7_1_10: document.getElementById('q-7.1.10').value,
+            q_7_1_11: document.getElementById('q-7.1.11').value,
+            q_7_1_12: document.getElementById('q-7.1.12').value,
+            q_7_1_13: document.getElementById('q-7.1.13').value,
+        },
+        q_7_2: document.getElementById('q-7.2').value,
+        q_7_3: document.getElementById('q-7.3').value,
+        q_7_4: document.getElementById('q-7.4').value,
+        q_7_5: {
+            q_7_5_1: getValueFromRadios('q-7.5.1'),
+            q_7_5_2: getValueFromRadios('q-7.5.2'),
+            q_7_5_3: getValueFromRadios('q-7.5.3'),
+            q_7_5_4: getValueFromRadios('q-7.5.4'),
+        }
+    }
+}
+
+function saveSectionEight() {
+    return {
+        q_8_1: document.getElementById('q-8.1').value,
+        q_8_2: document.getElementById('q-8.2').value,
+        q_8_3: document.getElementById('q-8.3').value,
+        q_8_4: document.getElementById('q-8.4').value,
+        q_8_5: document.getElementById('q-8.5').value,
+        q_8_6: document.getElementById('q-8.6').value,
+        q_8_7: document.getElementById('q-8.7').value,
+        q_8_8: document.getElementById('q-8.8').value,
+    }
+}
+
+function saveSectionNine(){
+    return {
+        q_9_1: {
+            yesNo: getValueFromRadios('q-9.1.yesNo'),
+            how: document.getElementById('q-9.1.how').value,
+        },
+        q_9_2: {
+            yesNo: getValueFromRadios('q-9.2.yesNo'),
+            how: document.getElementById('q-9.2.how').value,
+        },
+        q_9_3: {
+            yesNo: getValueFromRadios('q-9.3.yesNo'),
+            how: document.getElementById('q-9.3.how').value,
+        },
+        q_9_4: {
+            yesNo: getValueFromRadios('q-9.4.yesNo'),
+            how: document.getElementById('q-9.4.how').value,
+        },
+        q_9_5: {
+            yesNo: getValueFromRadios('q-9.5.yesNo'),
+            how: document.getElementById('q-9.5.how').value,
+        },
+        q_9_6: {
+            yesNo: getValueFromRadios('q-9.6.yesNo'),
+            how: document.getElementById('q-9.6.how').value,
+        },
+        q_9_7: {
+            yesNo: getValueFromRadios('q-9.7.yesNo'),
+            how: document.getElementById('q-9.7.how').value,
+        },
+        q_9_8: {
+            yesNo: getValueFromRadios('q-9.8.yesNo'),
+            how: document.getElementById('q-9.8.how').value,
+        },
+        q_9_9: {
+            yesNo: getValueFromRadios('q-9.9.yesNo'),
+            how: document.getElementById('q-9.9.how').value,
+        },
+        q_9_10: {
+            yesNo: getValueFromRadios('q-9.10.yesNo'),
+            how: document.getElementById('q-9.10.how').value,
+        },
+        q_9_11: {
+            yesNo: getValueFromRadios('q-9.11.yesNo'),
+            how: document.getElementById('q-9.11.how').value,
+        },
+        q_9_12: {
+            yesNo: getValueFromRadios('q-9.12.yesNo'),
+            how: document.getElementById('q-9.12.how').value,
+        },
+        q_9_13: {
+            yesNo: getValueFromRadios('q-9.13.yesNo'),
+            how: document.getElementById('q-9.13.how').value,
+        },
+        q_9_14: {
+            yesNo: getValueFromRadios('q-9.14.yesNo'),
+            how: document.getElementById('q-9.14.how').value,
+        },
+        q_9_15: {
+            yesNo: getValueFromRadios('q-9.15.yesNo'),
+            how: document.getElementById('q-9.15.how').value,
+        },
+        q_9_16: {
+            yesNo: getValueFromRadios('q-9.16.yesNo'),
+            how: document.getElementById('q-9.16.how').value,
+        },
+        q_9_17: {
+            yesNo: getValueFromRadios('q-9.17.yesNo'),
+            how: document.getElementById('q-9.17.how').value,
+        },
+        q_9_18: document.getElementById('q-9.18').value,
+        q_9_19: document.getElementById('q-9.19').value,
+        q_9_20: document.getElementById('q-9.20').value,
+        q_9_21: document.getElementById('q-9.21').value,
+    }
+}
+
+function saveSectionTen() {
+    return {
+        q_10_1: document.getElementById('q-10.1').value,
+        q_10_2: document.getElementById('q-10.2').value,
+        q_10_3: document.getElementById('q-10.3').value,
+        q_10_4: document.getElementById('q-10.4').value,
+        q_10_5: document.getElementById('q-10.5').value,
+        q_10_6: document.getElementById('q-10.6').value,
+        q_10_7: document.getElementById('q-10.7').value,
+        q_10_8: document.getElementById('q-10.8').value,
+    }
+}
+
+function saveSectionEleven() {
+    return {
+        q_11_1: getTableToArray('q-11.1'),
+        q_11_2: document.getElementById('q-11.2').value,
+        q_11_3: document.getElementById('q-11.3').value,
+        q_11_4: document.getElementById('q-11.4').value,
+    }
+}
+
+function saveSectionTwelve() {
+    return {
+        q_12: getTableToArray('q-12'),
+    }
+}
+
+function saveSectionThirteen(){
+    return {
+        q_13: document.getElementById('q-13').value,
+    }
+}
+
 function getValueFromRadios(name) {
     var eles = document.getElementsByName(name);
     for (const ele of eles) {
@@ -241,6 +472,7 @@ function getValueFromRadios(name) {
             return ele.value
         }
     }
+    return "empty"
 }
 
 function getTableToArray(id) {
