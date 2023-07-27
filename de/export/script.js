@@ -1,10 +1,11 @@
-setTimeout(function(){
+setTimeout(function () {
     loadFromLocalStorage()
 }, 1);
 
 function loadFromLocalStorage() {
     const data = JSON.parse(localStorage.getItem("maastricht-interview-data"));
     setMetaData(data.meta_data);
+    setSectionOne(data.section_1);
 }
 
 function setMetaData(data) {
@@ -24,6 +25,35 @@ function setMetaData(data) {
     document.getElementById('vh-file-number').innerHTML = data.file_number
 }
 
-function reformatDate(stringDate){
+function setSectionOne(data) {
+    document.getElementById('q-1.1').innerHTML = data.q_1_1
+    document.getElementById('q-1.2').innerHTML = data.q_1_2
+    document.getElementById('q-1.3').innerHTML = data.q_1_3
+    document.getElementById('q-1.4').innerHTML = data.q_1_4
+    document.getElementById('q-1.5').innerHTML = data.q_1_5
+
+    document.getElementById('q-1.5.1').innerHTML = formatRadioButtons(data.q_1_5_sub.q_1_5_1)
+    document.getElementById('q-1.5.2').innerHTML = formatRadioButtons(data.q_1_5_sub.q_1_5_2)
+    document.getElementById('q-1.5.3').innerHTML = formatRadioButtons(data.q_1_5_sub.q_1_5_3)
+    document.getElementById('q-1.5.4').innerHTML = formatRadioButtons(data.q_1_5_sub.q_1_5_4)
+    document.getElementById('q-1.5.5').innerHTML = formatRadioButtons(data.q_1_5_sub.q_1_5_5)
+}
+
+function reformatDate(stringDate) {
     return stringDate.split('-').reverse().join('.');
+}
+
+function formatRadioButtons(input) {
+    switch (input) {
+        case 'yes':
+            return "Ja"
+        case 'no':
+            return "Nein"
+        case 'toMe':
+            return "»zu mir«"
+        case 'notToMe':
+            return "»nicht zu mir«"
+        default:
+            return "Keine Angabe"
+    }
 }
