@@ -1,3 +1,96 @@
-<p>
-    Export
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="pdf-export.js"></script>
+    <title>Maastrichter Fragebogen Export</title>
+</head>
+
+<body>
+    <h1 class="topic">Antworten Exportieren</h1>
+    <div id="output-container" class="output-container">
+
+        <h1>Maastrichter Fragebogen</h1>
+        <h3>Interview mit einer Person, die Stimmen hört</h3>
+
+        <article name="firstPage" class="article-style">
+            <table class="vh-data-wrapper">
+                <tr>
+                    <td><label for="vh-name">Name des Stimmenhörers: </label></td>
+                    <td><span id="vh-name"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-adress">Adresse: </label></td>
+                    <td><span id="vh-adress"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-phone">Telefonnummer: </label></td>
+                    <td><span id="vh-phone"></td>
+                </tr>
+                <tr>
+                    <td><b>Hintergrundinformationen:</b>
+                    <td>
+                </tr>
+                <tr>
+                    <td><label for="vh-birthday">Geburtsdatum: </label></td>
+                    <td><span id="vh-birthday"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-gender">Geschlecht: </label></td>
+                    <td><span id="vh-gender"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-family-status">Familienstand: </label></td>
+                    <td><span id="vh-family-status"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-kids-number">Anzahl der Kinder: </label></td>
+                    <td><span id="vh-kids-number"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-accommodation">Unterkunft: </label></td>
+                    <td><span id="vh-accommodation"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-work">Arbeitsverhältnis: </label></td>
+                    <td><span id="vh-work"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-nationality">Nationalität/Ethnie: </label></td>
+                    <td><span id="vh-nationality"></td>
+                </tr>
+                <tr>
+                    <td><b>Informationen zum Interview:</b></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-name-interviewer">Name des Interviewers: </label></td>
+                    <td><span id="vh-name-interviewer"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-date-interview">Datum des Interviews: </label></td>
+                    <td><span id="vh-date-interview"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-date-interview-two">Datum des Nachfolgeinterviews: </label></td>
+                    <td><span id="vh-date-interview-two"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="vh-file-number">Aktenzeichen: </label></td>
+                    <td><span id="vh-file-number"></span></td>
+                </tr>
+            </table>
+        </article>
+
+    </div>
+    <div id="buttons-panel" class="button-panel">
+        <button onclick="pdfExport()" type="button" class="button-offset">Drucken / als PDF exportieren</button>
+        <button type="button" class="button-offset">als .docx exportieren</button>
+        <button type="button">Lokale Daten löschen</button>
+    </div>
+</body>
+</html>
