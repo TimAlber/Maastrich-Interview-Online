@@ -1,6 +1,6 @@
 setTimeout(function () {
     loadFromLocalStorage()
-}, 1);
+}, 10);
 
 function loadFromLocalStorage() {
     const data = JSON.parse(localStorage.getItem("maastricht-interview-data"));
