@@ -165,6 +165,8 @@ function setSectionThree(data){
     document.getElementById('q-3.3.27.yesNo').innerHTML = formatRadioButtons(data.q_3_3.q_3_3_27.yesNo)
     document.getElementById('q-3.3.27.age').innerHTML = data.q_3_3.q_3_3_27.age
     document.getElementById('q-3.3.27.voices').innerHTML = data.q_3_3.q_3_3_27.voices
+
+    document.getElementById('q-3.4').innerHTML = data.q_3_4
 }
 
 function drawTable(data) {
