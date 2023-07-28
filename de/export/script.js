@@ -9,6 +9,7 @@ function loadFromLocalStorage() {
     setSectionTwo(data.section_2);
     setSectionThree(data.section_3);
     setSectionFour(data.section_4);
+    setSectionFive(data.section_5);
 }
 
 function setMetaData(data) {
@@ -191,6 +192,12 @@ function setSectionFour(data){
     document.getElementById('q-4.4.13').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_13)
 
     document.getElementById('q-4.4.end').innerHTML = data.q_4_4_end
+}
+
+function setSectionFive(data){
+    document.getElementById('q-5.1').innerHTML = data.q_5_1
+    document.getElementById('q-5.2').innerHTML = data.q_5_2
+    document.getElementById('q-5.3').innerHTML = data.q_5_3
 }
 
 function drawTable(data) {
