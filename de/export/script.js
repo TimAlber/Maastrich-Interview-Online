@@ -8,6 +8,7 @@ function loadFromLocalStorage() {
     setSectionOne(data.section_1);
     setSectionTwo(data.section_2);
     setSectionThree(data.section_3);
+    setSectionFour(data.section_4);
 }
 
 function setMetaData(data) {
@@ -169,6 +170,29 @@ function setSectionThree(data){
     document.getElementById('q-3.4').innerHTML = data.q_3_4
 }
 
+function setSectionFour(data){
+    document.getElementById('q-4.1').innerHTML = data.q_4_1
+    document.getElementById('q-4.2').innerHTML = data.q_4_2
+    document.getElementById('q-4.3').innerHTML = data.q_4_3
+    document.getElementById('q-4.4').innerHTML = data.q_4_4
+
+    document.getElementById('q-4.4.1').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_1)
+    document.getElementById('q-4.4.2').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_2)
+    document.getElementById('q-4.4.3').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_3)
+    document.getElementById('q-4.4.4').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_4)
+    document.getElementById('q-4.4.5').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_5)
+    document.getElementById('q-4.4.6').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_6)
+    document.getElementById('q-4.4.7').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_7)
+    document.getElementById('q-4.4.8').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_8)
+    document.getElementById('q-4.4.9').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_9)
+    document.getElementById('q-4.4.10').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_10)
+    document.getElementById('q-4.4.11').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_11)
+    document.getElementById('q-4.4.12').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_12)
+    document.getElementById('q-4.4.13').innerHTML = formatCheckboxes(data.q_4_4_boxes.q_4_4_13)
+
+    document.getElementById('q-4.4.end').innerHTML = data.q_4_4_end
+}
+
 function drawTable(data) {
     var table = document.getElementById("q-2.2");
     for (let row of data) {
@@ -197,5 +221,16 @@ function formatRadioButtons(input) {
             return "»nicht zu mir«"
         default:
             return "Keine Angabe"
+    }
+}
+
+function formatCheckboxes(input){
+    switch (input) {
+        case true:
+            return "✓"
+        case false:
+            return " "
+        default:
+            return " "
     }
 }
