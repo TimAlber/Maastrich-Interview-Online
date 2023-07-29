@@ -10,6 +10,7 @@ function loadFromLocalStorage() {
     setSectionThree(data.section_3);
     setSectionFour(data.section_4);
     setSectionFive(data.section_5);
+    setSectionSix(data.section_6);
 }
 
 function setMetaData(data) {
@@ -198,6 +199,29 @@ function setSectionFive(data){
     document.getElementById('q-5.1').innerHTML = data.q_5_1
     document.getElementById('q-5.2').innerHTML = data.q_5_2
     document.getElementById('q-5.3').innerHTML = data.q_5_3
+}
+
+function setSectionSix(data){
+    document.getElementById('q-6.1.1').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_1)
+    document.getElementById('q-6.1.2').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_2)
+    document.getElementById('q-6.1.3').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_3)
+    document.getElementById('q-6.1.4').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_4)
+    document.getElementById('q-6.1.5').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_5)
+    document.getElementById('q-6.1.6').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_6)
+    document.getElementById('q-6.1.7').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_7)
+    document.getElementById('q-6.1.8').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_8)
+    document.getElementById('q-6.1.9').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_9)
+    document.getElementById('q-6.1.10').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_10)
+    document.getElementById('q-6.1.11').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_11)
+    document.getElementById('q-6.1.12').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_12)
+    document.getElementById('q-6.1.13').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_13)
+    document.getElementById('q-6.1.14').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_14)
+    document.getElementById('q-6.1.15').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_15)
+    document.getElementById('q-6.1.16').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_16)
+    document.getElementById('q-6.1.17').innerHTML = formatRadioButtons(data.q_6_1.q_6_1_17)
+
+    document.getElementById('q-6.1.18').innerHTML = data.q_6_1.q_6_1_18
+    document.getElementById('q-6.2').innerHTML = data.q_6_2
 }
 
 function drawTable(data) {
