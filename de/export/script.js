@@ -13,6 +13,7 @@ function loadFromLocalStorage() {
     setSectionSix(data.section_6);
     setSectionSeven(data.section_7);
     setSectionEight(data.section_8);
+    setSectionNine(data.section_9);
 }
 
 function setMetaData(data) {
@@ -260,6 +261,64 @@ function setSectionEight(data){
     document.getElementById('q-8.6').innerHTML = data.q_8_6
     document.getElementById('q-8.7').innerHTML = data.q_8_7
     document.getElementById('q-8.8').innerHTML = data.q_8_8
+}
+
+function setSectionNine(data){
+    document.getElementById('q-9.1.yesNo').innerHTML = formatRadioButtons(data.q_9_1.yesNo)
+    document.getElementById('q-9.1.how').innerHTML = data.q_9_1.how
+
+    document.getElementById('q-9.2.yesNo').innerHTML = formatRadioButtons(data.q_9_2.yesNo)
+    document.getElementById('q-9.2.how').innerHTML = data.q_9_2.how
+
+    document.getElementById('q-9.3.yesNo').innerHTML = formatRadioButtons(data.q_9_3.yesNo)
+    document.getElementById('q-9.3.how').innerHTML = data.q_9_3.how
+
+    document.getElementById('q-9.4.yesNo').innerHTML = formatRadioButtons(data.q_9_4.yesNo)
+    document.getElementById('q-9.4.how').innerHTML = data.q_9_4.how
+
+    document.getElementById('q-9.5.yesNo').innerHTML = formatRadioButtons(data.q_9_5.yesNo)
+    document.getElementById('q-9.5.how').innerHTML = data.q_9_5.how
+
+    document.getElementById('q-9.6.yesNo').innerHTML = formatRadioButtons(data.q_9_6.yesNo)
+    document.getElementById('q-9.6.how').innerHTML = data.q_9_6.how
+
+    document.getElementById('q-9.7.yesNo').innerHTML = formatRadioButtons(data.q_9_7.yesNo)
+    document.getElementById('q-9.7.how').innerHTML = data.q_9_7.how
+
+    document.getElementById('q-9.8.yesNo').innerHTML = formatRadioButtons(data.q_9_8.yesNo)
+    document.getElementById('q-9.8.how').innerHTML = data.q_9_8.how
+
+    document.getElementById('q-9.9.yesNo').innerHTML = formatRadioButtons(data.q_9_9.yesNo)
+    document.getElementById('q-9.9.how').innerHTML = data.q_9_9.how
+
+    document.getElementById('q-9.10.yesNo').innerHTML = formatRadioButtons(data.q_9_10.yesNo)
+    document.getElementById('q-9.10.how').innerHTML = data.q_9_10.how
+
+    document.getElementById('q-9.11.yesNo').innerHTML = formatRadioButtons(data.q_9_11.yesNo)
+    document.getElementById('q-9.11.how').innerHTML = data.q_9_11.how
+
+    document.getElementById('q-9.12.yesNo').innerHTML = formatRadioButtons(data.q_9_12.yesNo)
+    document.getElementById('q-9.12.how').innerHTML = data.q_9_12.how
+
+    document.getElementById('q-9.13.yesNo').innerHTML = formatRadioButtons(data.q_9_13.yesNo)
+    document.getElementById('q-9.13.how').innerHTML = data.q_9_13.how
+
+    document.getElementById('q-9.14.yesNo').innerHTML = formatRadioButtons(data.q_9_14.yesNo)
+    document.getElementById('q-9.14.how').innerHTML = data.q_9_14.how
+
+    document.getElementById('q-9.15.yesNo').innerHTML = formatRadioButtons(data.q_9_15.yesNo)
+    document.getElementById('q-9.15.how').innerHTML = data.q_9_15.how
+
+    document.getElementById('q-9.16.yesNo').innerHTML = formatRadioButtons(data.q_9_16.yesNo)
+    document.getElementById('q-9.16.how').innerHTML = data.q_9_16.how
+
+    document.getElementById('q-9.17.yesNo').innerHTML = formatRadioButtons(data.q_9_17.yesNo)
+    document.getElementById('q-9.17.how').innerHTML = data.q_9_17.how
+
+    document.getElementById('q-9.18').innerHTML = data.q_9_18
+    document.getElementById('q-9.19').innerHTML = data.q_9_19
+    document.getElementById('q-9.20').innerHTML = data.q_9_20
+    document.getElementById('q-9.21').innerHTML = data.q_9_21
 }
 
 function drawTable(data) {
