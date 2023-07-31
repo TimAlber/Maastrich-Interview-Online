@@ -14,7 +14,7 @@ function addToTable() {
     row.insertCell(3).innerText = gender;
     row.insertCell(4).innerText = content;
     row.insertCell(5).innerText = frequency;
-    row.insertCell(6).innerText = '<button type="button" onclick="deleteRow(this)">Zeile Löschen</button>';
+    row.insertCell(6).innerHTML = '<button type="button" onclick="deleteRow(this)">Zeile Löschen</button>';
 
     document.getElementById("int-number").value = '';
     document.getElementById("int-name").value = '';
@@ -38,7 +38,7 @@ function addToTableTwo() {
     row.insertCell(2).innerText = kind;
     row.insertCell(3).innerText = lenght;
     row.insertCell(4).innerText = reason;
-    row.insertCell(5).innerText = '<button type="button" onclick="deleteRowTwo(this)">Zeile Löschen</button>';
+    row.insertCell(5).innerHTML = '<button type="button" onclick="deleteRowTwo(this)">Zeile Löschen</button>';
 
     document.getElementById("int2-year").value = '';
     document.getElementById("int2-hospital").value = '';
@@ -57,7 +57,7 @@ function addToTableThree() {
     row.insertCell(0).innerText = name;
     row.insertCell(1).innerText = knows;
     row.insertCell(2).innerText = talk;
-    row.insertCell(3).innerText = '<button type="button" onclick="deleteRowThree(this)">Zeile Löschen</button>';
+    row.insertCell(3).innerHTML = '<button type="button" onclick="deleteRowThree(this)">Zeile Löschen</button>';
 
     document.getElementById("int3-name").value = '';
     document.getElementById("int3-knows").value = '';
