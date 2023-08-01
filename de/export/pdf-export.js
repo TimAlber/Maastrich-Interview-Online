@@ -11,3 +11,7 @@ function pdfExport(){
   
     return true;
 }
+
+function deleteData(){
+    localStorage.removeItem("maastricht-interview-data");
+}

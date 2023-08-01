@@ -18,6 +18,9 @@ function loadEverything(){
         setSectionEight(data.section_8);
         setSectionNine(data.section_9);
         setSectionTen(data.section_10);
+        setSectionEleven(data.section_11);
+        setSectionTwelve(data.section_12);
+        setSectionThirteen(data.section_13);
     }
 }
 
@@ -54,7 +57,7 @@ function setSectionOne(data){
 
 function setSectionTwo(data){
     document.getElementById("q-2.1").value = data.q_2_1
-    setTable(data.q_2_2,"q-2.2")
+    setTable(data.q_2_2, "q-2.2", '<button type="button" onclick="deleteRow(this)">Zeile Löschen</button>')
     document.getElementById("q-2.3").value = data.q_2_3
 }
 
@@ -243,9 +246,9 @@ function setSectionSeven(data){
     document.getElementById("q-7.1.12").value = data.q_7_1.q_7_1_12
     document.getElementById("q-7.1.13").value = data.q_7_1.q_7_1_13
 
-    document.getElementById("q-7.2").value = data.q_7_1_2
-    document.getElementById("q-7.3").value = data.q_7_1_3
-    document.getElementById("q-7.4").value = data.q_7_1_4
+    document.getElementById("q-7.2").value = data.q_7_2
+    document.getElementById("q-7.3").value = data.q_7_3
+    document.getElementById("q-7.4").value = data.q_7_4
 
     setRadioButton(data.q_7_5.q_7_5_1, "q-7.5.1")
     setRadioButton(data.q_7_5.q_7_5_2, "q-7.5.2")
@@ -333,6 +336,21 @@ function setSectionTen(data){
     document.getElementById("q-10.8").value = data.q_10_8
 }
 
+function setSectionEleven(data){
+    setTable(data.q_11_1, "q-11.1", '<button type="button" onclick="deleteRowTwo(this)">Zeile Löschen</button>')
+    document.getElementById("q-11.2").value = data.q_11_2
+    document.getElementById("q-11.3").value = data.q_11_3
+    document.getElementById("q-11.4").value = data.q_11_4
+}
+
+function setSectionTwelve(data){
+    setTable(data.q_12, "q-12", '<button type="button" onclick="deleteRowThree(this)">Zeile Löschen</button>')
+}
+
+function setSectionThirteen(data){
+    document.getElementById("q-13").value = data.q_13
+}
+
 function setRadioButton(input, name){
     var eles = document.getElementsByName(name);
     switch (input) {
@@ -351,7 +369,7 @@ function setRadioButton(input, name){
     }
 }
 
-function setTable(input, id){
+function setTable(input, id, button){
     var table = document.getElementById(id);
     input.shift();
 
@@ -362,6 +380,6 @@ function setTable(input, id){
             currentCell.innerText = row[i]
         }
         var anotherCell = newRow.insertCell(row.length);
-        anotherCell.innerHTML = '<button type="button" onclick="deleteRow(this)">Zeile Löschen</button>'
+        anotherCell.innerHTML = button
     }
 }
