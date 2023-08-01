@@ -11,6 +11,10 @@ function loadEverything(){
         setSectionOne(data.section_1);
         setSectionTwo(data.section_2);
         setSectionThree(data.section_3);
+        setSectionFour(data.section_4);
+        setSectionFive(data.section_5);
+        setSectionSix(data.section_6);
+        setSectionSeven(data.section_7);
     }
 }
 
@@ -167,6 +171,83 @@ function setSectionThree(data){
     document.getElementById("q-3.3.27.voices").value = data.q_3_3.q_3_3_27.voices
 
     document.getElementById("q-3.4").value = data.q_3_4
+}
+
+function setSectionFour(data){
+    document.getElementById("q-4.1").value = data.q_4_1
+    document.getElementById("q-4.2").value = data.q_4_2
+    document.getElementById("q-4.3").value = data.q_4_3
+    document.getElementById("q-4.4").value = data.q_4_4
+
+    document.getElementById("q-4.4.1").checked = data.q_4_4_boxes.q_4_4_1;
+    document.getElementById("q-4.4.2").checked = data.q_4_4_boxes.q_4_4_2;
+    document.getElementById("q-4.4.3").checked = data.q_4_4_boxes.q_4_4_3;
+    document.getElementById("q-4.4.4").checked = data.q_4_4_boxes.q_4_4_4;
+    document.getElementById("q-4.4.5").checked = data.q_4_4_boxes.q_4_4_5;
+    document.getElementById("q-4.4.6").checked = data.q_4_4_boxes.q_4_4_6;
+    document.getElementById("q-4.4.7").checked = data.q_4_4_boxes.q_4_4_7;
+    document.getElementById("q-4.4.8").checked = data.q_4_4_boxes.q_4_4_8;
+    document.getElementById("q-4.4.9").checked = data.q_4_4_boxes.q_4_4_9;
+    document.getElementById("q-4.4.10").checked = data.q_4_4_boxes.q_4_4_10;
+    document.getElementById("q-4.4.11").checked = data.q_4_4_boxes.q_4_4_11;
+    document.getElementById("q-4.4.12").checked = data.q_4_4_boxes.q_4_4_12;
+    document.getElementById("q-4.4.13").checked = data.q_4_4_boxes.q_4_4_13;
+
+    document.getElementById("q-4.4.end").value = data.q_4_4_end
+}
+
+function setSectionFive(data){
+    document.getElementById("q-5.1").value = data.q_5_1
+    document.getElementById("q-5.2").value = data.q_5_2
+    document.getElementById("q-5.3").value = data.q_5_3
+}
+
+function setSectionSix(data){
+    setRadioButton(data.q_6_1.q_6_1_1, "q-6.1.1")
+    setRadioButton(data.q_6_1.q_6_1_2, "q-6.1.2")
+    setRadioButton(data.q_6_1.q_6_1_3, "q-6.1.3")
+    setRadioButton(data.q_6_1.q_6_1_4, "q-6.1.4")
+    setRadioButton(data.q_6_1.q_6_1_5, "q-6.1.5")
+    setRadioButton(data.q_6_1.q_6_1_6, "q-6.1.6")
+    setRadioButton(data.q_6_1.q_6_1_7, "q-6.1.7")
+    setRadioButton(data.q_6_1.q_6_1_8, "q-6.1.8")
+    setRadioButton(data.q_6_1.q_6_1_9, "q-6.1.9")
+    setRadioButton(data.q_6_1.q_6_1_10, "q-6.1.10")
+    setRadioButton(data.q_6_1.q_6_1_11, "q-6.1.11")
+    setRadioButton(data.q_6_1.q_6_1_12, "q-6.1.12")
+    setRadioButton(data.q_6_1.q_6_1_13, "q-6.1.13")
+    setRadioButton(data.q_6_1.q_6_1_14, "q-6.1.14")
+    setRadioButton(data.q_6_1.q_6_1_15, "q-6.1.15")
+    setRadioButton(data.q_6_1.q_6_1_16, "q-6.1.16")
+    setRadioButton(data.q_6_1.q_6_1_17, "q-6.1.17")
+
+    document.getElementById("q-6.1.18").value = data.q_6_1.q_6_1_18
+    document.getElementById("q-6.2").value = data.q_6_2
+}
+
+function setSectionSeven(data){
+    document.getElementById("q-7.1.1").value = data.q_7_1.q_7_1_1
+    document.getElementById("q-7.1.2").value = data.q_7_1.q_7_1_2
+    document.getElementById("q-7.1.3").value = data.q_7_1.q_7_1_3
+    document.getElementById("q-7.1.4").value = data.q_7_1.q_7_1_4
+    document.getElementById("q-7.1.5").value = data.q_7_1.q_7_1_5
+    document.getElementById("q-7.1.6").value = data.q_7_1.q_7_1_6
+    document.getElementById("q-7.1.7").value = data.q_7_1.q_7_1_7
+    document.getElementById("q-7.1.8").value = data.q_7_1.q_7_1_8
+    document.getElementById("q-7.1.9").value = data.q_7_1.q_7_1_9
+    document.getElementById("q-7.1.10").value = data.q_7_1.q_7_1_10
+    document.getElementById("q-7.1.11").value = data.q_7_1.q_7_1_11
+    document.getElementById("q-7.1.12").value = data.q_7_1.q_7_1_12
+    document.getElementById("q-7.1.13").value = data.q_7_1.q_7_1_13
+
+    document.getElementById("q-7.2").value = data.q_7_1_2
+    document.getElementById("q-7.3").value = data.q_7_1_3
+    document.getElementById("q-7.4").value = data.q_7_1_4
+
+    setRadioButton(data.q_7_5.q_7_5_1, "q-7.5.1")
+    setRadioButton(data.q_7_5.q_7_5_2, "q-7.5.2")
+    setRadioButton(data.q_7_5.q_7_5_3, "q-7.5.3")
+    setRadioButton(data.q_7_5.q_7_5_4, "q-7.5.4")
 }
 
 function setRadioButton(input, name){
