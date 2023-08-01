@@ -15,6 +15,9 @@ function loadEverything(){
         setSectionFive(data.section_5);
         setSectionSix(data.section_6);
         setSectionSeven(data.section_7);
+        setSectionEight(data.section_8);
+        setSectionNine(data.section_9);
+        setSectionTen(data.section_10);
     }
 }
 
@@ -248,6 +251,86 @@ function setSectionSeven(data){
     setRadioButton(data.q_7_5.q_7_5_2, "q-7.5.2")
     setRadioButton(data.q_7_5.q_7_5_3, "q-7.5.3")
     setRadioButton(data.q_7_5.q_7_5_4, "q-7.5.4")
+}
+
+function setSectionEight(data){
+    document.getElementById("q-8.1").value = data.q_8_1
+    document.getElementById("q-8.2").value = data.q_8_2
+    document.getElementById("q-8.3").value = data.q_8_3
+    document.getElementById("q-8.4").value = data.q_8_4
+    document.getElementById("q-8.5").value = data.q_8_5
+    document.getElementById("q-8.6").value = data.q_8_6
+    document.getElementById("q-8.7").value = data.q_8_7
+    document.getElementById("q-8.8").value = data.q_8_8
+}
+
+function setSectionNine(data){
+    setRadioButton(data.q_9_1.yesNo, "q-9.1.yesNo")
+    document.getElementById("q-9.1.how").value = data.q_9_1.how
+
+    setRadioButton(data.q_9_2.yesNo, "q-9.2.yesNo")
+    document.getElementById("q-9.2.how").value = data.q_9_2.how
+
+    setRadioButton(data.q_9_3.yesNo, "q-9.3.yesNo")
+    document.getElementById("q-9.3.how").value = data.q_9_3.how
+
+    setRadioButton(data.q_9_4.yesNo, "q-9.4.yesNo")
+    document.getElementById("q-9.4.how").value = data.q_9_4.how
+
+    setRadioButton(data.q_9_5.yesNo, "q-9.5.yesNo")
+    document.getElementById("q-9.5.how").value = data.q_9_5.how
+
+    setRadioButton(data.q_9_6.yesNo, "q-9.6.yesNo")
+    document.getElementById("q-9.6.how").value = data.q_9_6.how
+
+    setRadioButton(data.q_9_7.yesNo, "q-9.7.yesNo")
+    document.getElementById("q-9.7.how").value = data.q_9_7.how
+
+    setRadioButton(data.q_9_8.yesNo, "q-9.8.yesNo")
+    document.getElementById("q-9.8.how").value = data.q_9_8.how
+
+    setRadioButton(data.q_9_9.yesNo, "q-9.9.yesNo")
+    document.getElementById("q-9.9.how").value = data.q_9_9.how
+
+    setRadioButton(data.q_9_10.yesNo, "q-9.10.yesNo")
+    document.getElementById("q-9.10.how").value = data.q_9_10.how
+
+    setRadioButton(data.q_9_11.yesNo, "q-9.11.yesNo")
+    document.getElementById("q-9.11.how").value = data.q_9_11.how
+
+    setRadioButton(data.q_9_12.yesNo, "q-9.12.yesNo")
+    document.getElementById("q-9.12.how").value = data.q_9_12.how
+
+    setRadioButton(data.q_9_13.yesNo, "q-9.13.yesNo")
+    document.getElementById("q-9.13.how").value = data.q_9_13.how
+
+    setRadioButton(data.q_9_14.yesNo, "q-9.14.yesNo")
+    document.getElementById("q-9.14.how").value = data.q_9_14.how
+
+    setRadioButton(data.q_9_15.yesNo, "q-9.15.yesNo")
+    document.getElementById("q-9.15.how").value = data.q_9_15.how
+
+    setRadioButton(data.q_9_16.yesNo, "q-9.16.yesNo")
+    document.getElementById("q-9.16.how").value = data.q_9_16.how
+
+    setRadioButton(data.q_9_17.yesNo, "q-9.17.yesNo")
+    document.getElementById("q-9.17.how").value = data.q_9_17.how
+
+    document.getElementById("q-9.18").value = data.q_9_18
+    document.getElementById("q-9.19").value = data.q_9_19
+    document.getElementById("q-9.20").value = data.q_9_20
+    document.getElementById("q-9.21").value = data.q_9_21
+}
+
+function setSectionTen(data){
+    document.getElementById("q-10.1").value = data.q_10_1
+    document.getElementById("q-10.2").value = data.q_10_2
+    document.getElementById("q-10.3").value = data.q_10_3
+    document.getElementById("q-10.4").value = data.q_10_4
+    document.getElementById("q-10.5").value = data.q_10_5
+    document.getElementById("q-10.6").value = data.q_10_6
+    document.getElementById("q-10.7").value = data.q_10_7
+    document.getElementById("q-10.8").value = data.q_10_8
 }
 
 function setRadioButton(input, name){
