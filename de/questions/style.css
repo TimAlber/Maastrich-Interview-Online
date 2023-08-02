@@ -49,30 +49,31 @@
 
 .first-table-number {
     margin-right: 2px;
+    width: 190px;
 }
 
 .first-table-name {
-    width: 110px;
+    width: 135px;
     margin-right: 2px;
 }
 
 .first-table-age {
-    width: 105px;
+    width: 120px;
     margin-right: 2px;
 }
 
 .first-table-gender {
-    width: 190px;
+    width: 222px;
     margin-right: 2px;
 }
 
 .first-table-content {
-    width: 260px;
+    width: 310px;
     margin-right: 2px;
 }
 
 .first-table-frequency {
-    width: 260px;
+    width: 220px;
 }
 
 .input-width {
@@ -98,42 +99,42 @@
 }
 
 .second-table-year {
-    width: 60px;
-    margin-right: 2px;
-}
-
-.second-table-hospital {
-    width: 230px;
-    margin-right: 2px;
-}
-
-.second-table-kind {
-    width: 160px;
-    margin-right: 2px;
-}
-
-.second-table-lenght {
     width: 70px;
     margin-right: 2px;
 }
 
+.second-table-hospital {
+    width: 300px;
+    margin-right: 2px;
+}
+
+.second-table-kind {
+    width: 205px;
+    margin-right: 2px;
+}
+
+.second-table-lenght {
+    width: 85px;
+    margin-right: 2px;
+}
+
 .second-table-reason {
-    width: 100%;
+    width: 610px;
     margin-right: 2px;
 }
 
 .third-table-name {
-    width: 60px;
+    width: 90px;
     margin-right: 2px;
 }
 
 .third-table-knows {
-    width: 400px;
+    width: 535px;
     margin-right: 2px;
 }
 
 .third-table-talk {
-    width: 500px;
+    width: 660px;
     margin-right: 2px;
 }
 
