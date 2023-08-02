@@ -1,0 +1,145 @@
+.vh-data-wrapper {
+    width: 100%
+}
+
+.vh-data-input {
+    width: 50vw;
+}
+
+.vh-data-date-input {
+    width: calc(50vw + 3px)
+}
+
+.save-btn {
+    float: right;
+    margin-right: 25vw;
+    margin-top: 10px;
+}
+
+.article-style {
+    width: 75vw;
+    margin-left: 20px;
+}
+
+.text-area-style {
+    width: 100%;
+}
+
+.table-style {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-style td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
+.interactive-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.interactive-table td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.first-table-number {
+    margin-right: 2px;
+    width: 190px;
+}
+
+.first-table-name {
+    width: 135px;
+    margin-right: 2px;
+}
+
+.first-table-age {
+    width: 120px;
+    margin-right: 2px;
+}
+
+.first-table-gender {
+    width: 222px;
+    margin-right: 2px;
+}
+
+.first-table-content {
+    width: 310px;
+    margin-right: 2px;
+}
+
+.first-table-frequency {
+    width: 220px;
+}
+
+.input-width {
+    width: calc(100% - 10px);
+}
+
+.inputs {
+    display: flex;
+}
+
+.button-end {
+    display: flex;
+    justify-content: end;
+}
+
+.yes-no-width {
+    width: 100px;
+}
+
+.emo-div-border {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.second-table-year {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.second-table-hospital {
+    width: 300px;
+    margin-right: 2px;
+}
+
+.second-table-kind {
+    width: 205px;
+    margin-right: 2px;
+}
+
+.second-table-lenght {
+    width: 85px;
+    margin-right: 2px;
+}
+
+.second-table-reason {
+    width: 610px;
+    margin-right: 2px;
+}
+
+.third-table-name {
+    width: 90px;
+    margin-right: 2px;
+}
+
+.third-table-knows {
+    width: 535px;
+    margin-right: 2px;
+}
+
+.third-table-talk {
+    width: 660px;
+    margin-right: 2px;
+}
+
+.save-button {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
