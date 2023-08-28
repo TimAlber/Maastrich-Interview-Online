@@ -371,15 +371,15 @@ function reformatDate(stringDate) {
 function formatRadioButtons(input) {
     switch (input) {
         case 'yes':
-            return "Ja"
+            return "Yes"
         case 'no':
-            return "Nein"
+            return "No"
         case 'toMe':
-            return "»zu mir«"
+            return "»to Me«"
         case 'notToMe':
-            return "»nicht zu mir«"
+            return "»not to Me«"
         default:
-            return "Keine Angabe"
+            return "Not specified"
     }
 }
 
